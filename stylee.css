@@ -1,0 +1,178 @@
+.header0{
+    background-image: url("./images/intro-bg.jpg");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center
+    
+;
+}
+.layer{
+    background-color: rgba(28, 27, 27, 0.275);
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.navbar{
+    background-color: #33373a;
+}
+
+:root{
+    --maincolor:#f6166d;
+}
+.navbar-brand , .nav-link ,.parglorem ,.titleh1{
+color: white;
+}
+.navbar .navbar-brand:hover{
+    color: white;
+}
+.navbar .active {
+    color:var(--maincolor);
+}
+.navbar .active:hover{
+    color:var(--maincolor);
+}
+ .navbar .nav-link:hover,.link1:hover{
+    color:var(--maincolor);
+}
+ .navbar .nav-link{
+    position: relative;
+    transition: all 1s;
+}
+.navbar .nav-link::after{
+    content: "";
+    width: 0px;
+    height: 2px;
+    background-color: var(--maincolor);
+    position: absolute;
+    left: 10px;
+    bottom: 0;
+    transition: all 1s;
+}
+.navbar .nav-link:hover::after{
+    width: 50px;
+}
+.link1{
+    color:var(--maincolor);
+    text-decoration: none;
+}
+ .i{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.i:hover{
+    color: var(--maincolor);
+}
+.circule{
+    width: 50px;
+    height: 75px;
+    border: 1px solid white;
+    border-radius: 25px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    
+    
+    
+}
+.circule::after{
+    content:"";
+    width: 15px;
+    height: 15px;
+    background-color: var(--maincolor);
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 37%;
+    transform: translateX(50);
+    animation: move 1.5s infinite;
+
+}
+@keyframes move{
+    0%{
+        opacity: 1;
+        top: 0;
+    }
+    100%{
+        opacity: 0;
+        top: 80%;
+    }
+}
+.item1{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+
+}
+.titleh2{
+    color: #7f878d;
+    font-size: 40px;
+}
+.titleh3{
+    position: absolute;
+}
+.loremp1{
+    position:relative
+}
+.loremp1::after{
+content: "";
+width: 100px;
+height: 2px;
+background-color: var(--maincolor);
+position: absolute;
+bottom: 0;
+left: 50%;
+transform: translateX(-50%);
+transition: width 1s;
+
+}
+.items:hover .loremp1::after {
+    width: 150px;
+    
+    
+}
+.loremp12{
+    color:black !important;
+}
+.carousel-indicators [data-bs-target]{
+    background-color: var(--maincolor);
+}
+.image1{
+    width: 100%;
+    
+}
+.titleheader{
+    position: absolute;
+    top: 0;
+    bottom:120%; 
+    left: 10px;
+    right: 10px;
+    overflow: hidden ;
+    transition: all 1s;
+    background-color: var(--maincolor);
+    opacity: 0.8;
+    
+}
+.itemphoto{
+    position: relative;
+    overflow: hidden ;
+
+}
+.itemphoto:hover .titleheader{
+   
+    bottom:10px; 
+    
+    
+    
+}
+.itemphoto:hover .image1{
+    filter: blur(10px);
+}
+
+
